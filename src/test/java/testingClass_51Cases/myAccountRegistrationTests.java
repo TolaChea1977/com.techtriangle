@@ -4,14 +4,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.github.dockerjava.api.model.Config;
-
 import Utilities.BaseClass;
+import Utilities.CommonMethods;
 import tola.automationTesting.pages.MyAccountLoginPage;
 import tola.automationTesting.pages.MyAccountRegistrationPage;
 
-public class myAccountRegistrationTests {
+public class myAccountRegistrationTests extends CommonMethods{
 
 MyAccountRegistrationPage mar = new MyAccountRegistrationPage();
 	
@@ -23,42 +22,55 @@ MyAccountRegistrationPage mar = new MyAccountRegistrationPage();
 		mar.myAccountMenu.click();
 	}
 	
-	@Test (enabled = false)
+	@Test (priority = 1)
 	public void registrationSignIn() throws InterruptedException {
-		mar.CheckRegistration();
+		mar.checkRegistration();
 		String actualresult = mar.registerResult.getText();
 		System.out.println(actualresult);
 		String expectedResult = "Hello chansereyvatana169 (not chansereyvatana169? Sign out)";
 		Assert.assertTrue(actualresult.equals(expectedResult));//test successfully registered
 	}
 	
-	@Test (enabled = true)
+	@Test (priority = 2)
 	public void RegistrationWithInvalidEmailId() throws InterruptedException {
-		
-		mar.invalidEmailId();
-		
+		mar.checkRegistrationInvalidEmailId();
+		waitForVisibility(mar.errorMessage);
+		String actualMessage = mar.errorMessage.getText();
+		String expectedMessage = "Error: An account is already registered with your email address. Please login.";
+		Assert.assertEquals(actualMessage,expectedMessage);
+		System.out.println("Resgister is fail "+actualMessage);	
 	}
-	/*
-4) Enter invalid Email Address in Email-Address textbox
-5) Enter your own password in password textbox
-6) Click on Register button
-7) Registration must fail with a warning message(ie You must enter a valid email address)
-	 * */
 	
+	@Test (priority = 3)
+	public void RegistrationWithEmptyEmailId() throws InterruptedException{
+		mar.checkRegistrationEmptyEmailId();
+		waitForVisibility(mar.errorMessage);
+		String actualMessage = mar.errorMessage.getText();
+		String expectedMessage = "Error: Please provide a valid email address.";
+		Assert.assertEquals(actualMessage,expectedMessage);
+		System.out.println("Resgister is fail "+actualMessage);	
+	}
 	
+	@Test (priority = 4)
+	public void RegistrationWithEmptyPassword() throws InterruptedException {
+		mar.checkRegistrationEmptyPassword();
+		String actualMessage = mar.errorMessage.getText();
+		String expectedMessage = "Error: Please enter an account password.";
+		Assert.assertEquals(actualMessage,expectedMessage);
+		System.out.println("Resgister is fail "+actualMessage);
+	}
 	
-	
-	
-	
-	
-	
-	
-	
+	@Test (priority = 5)
+		public void RegistrationWithEmptyEmailIdAndPassword() throws InterruptedException {
+		mar.checkRegistrationWithEmptyEmailAndPassword();
+		String actualMessage = mar.errorMessage.getText();
+		String expectedMessage = "Error: Please provide a valid email address.";
+		Assert.assertEquals(actualMessage,expectedMessage);
+		System.out.println("Resgister is fail "+actualMessage);
+		}
+
 	@AfterClass
 	public void tearDown() {
-//		BaseClass.tearDown();
+		BaseClass.tearDown();
 	}
-	
-
-	
 }

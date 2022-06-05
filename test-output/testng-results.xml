@@ -1,97 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-04T23:34:33 EDT" name="Default suite" finished-at="2022-06-04T23:35:00 EDT" duration-ms="26811">
+  <suite started-at="2022-06-05T15:48:01 EDT" name="Default suite" finished-at="2022-06-05T15:48:45 EDT" duration-ms="44620">
     <groups>
     </groups>
-    <test started-at="2022-06-04T23:34:33 EDT" name="Default test" finished-at="2022-06-04T23:35:00 EDT" duration-ms="26811">
-      <class name="testingClass_51Cases.myAccountRegistrationTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountRegistrationTests@58065f0c]" started-at="2022-06-04T23:34:33 EDT" name="setUp" finished-at="2022-06-04T23:34:37 EDT" duration-ms="3551" status="PASS">
+    <test started-at="2022-06-05T15:48:01 EDT" name="Default test" finished-at="2022-06-05T15:48:45 EDT" duration-ms="44620">
+      <class name="testingClass_51Cases.myAccountLoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:01 EDT" name="setUp" finished-at="2022-06-05T15:48:05 EDT" duration-ms="3637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="RegistrationWithInvalidEmailId()[pri:0, instance:testingClass_51Cases.myAccountRegistrationTests@58065f0c]" started-at="2022-06-04T23:34:37 EDT" name="RegistrationWithInvalidEmailId" finished-at="2022-06-04T23:35:00 EDT" duration-ms="23214" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='page-36']/div/div[1]/ul/li"}
-  (Session info: chrome=102.0.5005.63)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-J4MDNS6', ip: '192.168.0.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\TOLACH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59040}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d7d7d853b34e95029d4d9e7f82e597d1
-*** Element info: {Using=xpath, value=//*[@id='page-36']/div/div[1]/ul/li}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='page-36']/div/div[1]/ul/li"}
-  (Session info: chrome=102.0.5005.63)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-J4MDNS6', ip: '192.168.0.10', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\TOLACH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59040}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d7d7d853b34e95029d4d9e7f82e597d1
-*** Element info: {Using=xpath, value=//*[@id='page-36']/div/div[1]/ul/li}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.getText(Unknown Source)
-at tola.automationTesting.pages.MyAccountRegistrationPage.invalidEmailId(MyAccountRegistrationPage.java:51)
-at testingClass_51Cases.myAccountRegistrationTests.RegistrationWithInvalidEmailId(myAccountRegistrationTests.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="loginWithUserNameAndPassword()[pri:1, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:05 EDT" name="loginWithUserNameAndPassword" finished-at="2022-06-05T15:48:08 EDT" duration-ms="3688" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegistrationWithInvalidEmailId -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testingClass_51Cases.myAccountRegistrationTests@58065f0c]" started-at="2022-06-04T23:35:00 EDT" name="tearDown" finished-at="2022-06-04T23:35:00 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- loginWithUserNameAndPassword -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:08 EDT" name="setUp" finished-at="2022-06-05T15:48:11 EDT" duration-ms="2596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginWithIncorrectUsernameAndIncorrectPassword()[pri:2, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:11 EDT" name="LoginWithIncorrectUsernameAndIncorrectPassword" finished-at="2022-06-05T15:48:12 EDT" duration-ms="1623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithIncorrectUsernameAndIncorrectPassword -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:12 EDT" name="setUp" finished-at="2022-06-05T15:48:16 EDT" duration-ms="3354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginWithCorrectUsernameAndEmptyPassword()[pri:3, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:16 EDT" name="LoginWithCorrectUsernameAndEmptyPassword" finished-at="2022-06-05T15:48:17 EDT" duration-ms="1473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithCorrectUsernameAndEmptyPassword -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:17 EDT" name="setUp" finished-at="2022-06-05T15:48:21 EDT" duration-ms="3486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginWithEmptyUsernameAndCorrectPassword()[pri:4, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:21 EDT" name="LoginWithEmptyUsernameAndCorrectPassword" finished-at="2022-06-05T15:48:22 EDT" duration-ms="1462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithEmptyUsernameAndCorrectPassword -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:22 EDT" name="setUp" finished-at="2022-06-05T15:48:25 EDT" duration-ms="3028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginWithEmptyUsernameAndEmptyPassword()[pri:5, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:25 EDT" name="LoginWithEmptyUsernameAndEmptyPassword" finished-at="2022-06-05T15:48:26 EDT" duration-ms="1256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithEmptyUsernameAndEmptyPassword -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:26 EDT" name="setUp" finished-at="2022-06-05T15:48:32 EDT" duration-ms="5900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginPasswordshouldBeMasked()[pri:6, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:32 EDT" name="LoginPasswordshouldBeMasked" finished-at="2022-06-05T15:48:33 EDT" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPasswordshouldBeMasked -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:33 EDT" name="setUp" finished-at="2022-06-05T15:48:35 EDT" duration-ms="2336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginHandlesCaseSensitive()[pri:7, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:35 EDT" name="LoginHandlesCaseSensitive" finished-at="2022-06-05T15:48:36 EDT" duration-ms="1369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginHandlesCaseSensitive -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:36 EDT" name="setUp" finished-at="2022-06-05T15:48:39 EDT" duration-ms="3102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginAuthentication()[pri:8, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:39 EDT" name="LoginAuthentication" finished-at="2022-06-05T15:48:45 EDT" duration-ms="5845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAuthentication -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:45 EDT" name="tearDown" finished-at="2022-06-05T15:48:45 EDT" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testingClass_51Cases.myAccountRegistrationTests -->
+      </class> <!-- testingClass_51Cases.myAccountLoginTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

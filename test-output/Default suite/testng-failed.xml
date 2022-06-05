@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testingClass_51Cases.myAccountRegistrationTests">
+      <class name="testingClass_51Cases.myAccountLoginTests">
         <methods>
+          <include name="LoginPasswordshouldBeMasked"/>
+          <include name="LoginWithIncorrectUsernameAndIncorrectPassword"/>
+          <include name="LoginWithCorrectUsernameAndEmptyPassword"/>
+          <include name="LoginWithEmptyUsernameAndEmptyPassword"/>
+          <include name="LoginWithEmptyUsernameAndCorrectPassword"/>
+          <include name="LoginHandlesCaseSensitive"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="RegistrationWithInvalidEmailId"/>
+          <include name="LoginAuthentication"/>
         </methods>
-      </class> <!-- testingClass_51Cases.myAccountRegistrationTests -->
+      </class> <!-- testingClass_51Cases.myAccountLoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
