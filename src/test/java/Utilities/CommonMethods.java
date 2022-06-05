@@ -3,6 +3,7 @@ package Utilities;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -284,5 +285,19 @@ public class CommonMethods {
 		public static void doubleClick(WebElement source) {
 			Actions actions = new Actions(BaseClass.getDriver());
 			actions.doubleClick(source).perform();
+		}
+		
+		//encode string to byte
+		public static String getDecodedString(String encodedString) {
+			
+			return new String(Base64.getDecoder().decode(encodedString.getBytes()));
+			
+		}
+		
+		//decoding byte to string
+		public static String getEncodeString(String decodedString){
+			
+			return new String(Base64.getEncoder().encodeToString(decodedString.getBytes()));
+			
 		}
 }
