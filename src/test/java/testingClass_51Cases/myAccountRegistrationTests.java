@@ -16,26 +16,33 @@ public class myAccountRegistrationTests {
 MyAccountRegistrationPage mar = new MyAccountRegistrationPage();
 	
 	@BeforeMethod
-	public void setUp() throws InterruptedException {
+	public void setUp() {
 		BaseClass.getDriver();
-		Thread.sleep(2000);
 		BaseClass.getDriver().navigate().back();
 		BaseClass.getDriver().navigate().forward();
 		mar.myAccountMenu.click();
 	}
-	@Test (enabled = true)
-	public void registrationSignIn() {
+	
+	@Test (enabled = false)
+	public void registrationSignIn() throws InterruptedException {
 		mar.CheckRegistration();
-		Assert.assertTrue(mar.registerButton.isEnabled());
+		String actualresult = mar.registerResult.getText();
+		System.out.println(actualresult);
+		String expectedResult = "Hello chansereyvatana169 (not chansereyvatana169? Sign out)";
+		Assert.assertTrue(actualresult.equals(expectedResult));//test successfully registered
 	}
 	
-	/*1) Open the browser
-2) Enter the URL “http://practice.automationtesting.in/”
-3) Click on My Account Menu
-4) Enter registered Email Address in Email-Address textbox
+	@Test (enabled = true)
+	public void RegistrationWithInvalidEmailId() throws InterruptedException {
+		
+		mar.invalidEmailId();
+		
+	}
+	/*
+4) Enter invalid Email Address in Email-Address textbox
 5) Enter your own password in password textbox
 6) Click on Register button
-7) User will be registered successfully and will be navigated to the Home page
+7) Registration must fail with a warning message(ie You must enter a valid email address)
 	 * */
 	
 	
