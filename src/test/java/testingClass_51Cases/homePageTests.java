@@ -31,19 +31,19 @@ public class homePageTests {
 		sP.homeButton.click();
 	}
 
-	@Test(enabled = false)
+	@Test(priority = 1)
 	public void HomePageWithThreeSlidersOnly() {
 		hP.checkSlidersCount(Constants.slidersCount);
 
 	}
 
-	@Test(enabled = false)
+	@Test(priority = 2)
 	public void HomePageWithThreeArrivalsOnly() {
 		hP.checkSlidersCount(Constants.slidersCount);
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 	}
 
-	@Test(enabled = false)
+	@Test(priority = 3)
 	public void HomePageImagesArrivalsShouldNavigate() {
 		hP.checkSlidersCount(Constants.slidersCount);
 		hP.checkArrivalsCount(Constants.arrivalsCount);
@@ -51,7 +51,7 @@ public class homePageTests {
 		hP.VerifyAddItemBox();
 	
 		}
-	@Test(enabled = false)
+	@Test(priority = 4)
 	public void HomePageArrivalsImagesDescription() {
 		
 		hP.checkSlidersCount(Constants.slidersCount);
@@ -60,7 +60,7 @@ public class homePageTests {
 		hP.verifyProductDescriptionDisplay();
 	}
 	
-	@Test (enabled = false)
+	@Test (priority = 5)
 	public void homePageArrivalsImagesReviews(){
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 		hP.verifyImagesInArrivalsShouldNavigate();
@@ -69,27 +69,27 @@ public class homePageTests {
 		hP.verifyProductReviewDisplay();//Only verify the review box is display or not.
 	}
 	
-	@Test (enabled = false)
+	@Test (priority = 6)
 	public void homePageArrivalsAddToBasket(){
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 		hP.verifyImagesInArrivalsShouldNavigate();
 		hP.VerifyAddItemBox();//All new arrivals are sold out. So I test related book instead.		
 	}
 	
-	@Test (enabled = false)
+	@Test (priority = 7)
 	public void HomePageArrivalsAddToBasketWithMoreBooks() {
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 		hP.VerifyAddHTML5FormBook(Constants.quantityCountHPTest7);
 	}
 	
-	@Test (enabled = false)
+	@Test (priority = 8)
 	public void HomeArrivalsAddToBasketItems() throws InterruptedException {
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 		hP.verifyImagesInArrivalsShouldNavigate();
 		hP.VerifyAddHTML5FormToBasketAndProceedCheckout(Constants.quantityCountHPTest8);
 	}
 	
-	@Test (enabled = false)
+	@Test (priority = 9)
 	public void HomeArrivalsAddToBasketItemsCoupon() throws InterruptedException {
 			
 		hP.checkArrivalsCount(Constants.arrivalsCount);
@@ -103,7 +103,7 @@ public class homePageTests {
 		//so i assert true with the false msg.	
 	}
 
-	@Test (enabled = false)
+	@Test (priority = 10)
 	public void HomeArrivalsAddToBasketItemsCouponValueLessthan450() throws InterruptedException {
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 		hP.verifyImagesInArrivalsShouldNavigate();
@@ -112,7 +112,7 @@ public class homePageTests {
 		//There is no book that price is >than 450. So this Test case cannot be verify.
 	}
 	
-	@Test (enabled = false)
+	@Test (priority = 11)
 	public void HomeArrivalsAddToBasketItemsRemoveBook() throws InterruptedException{
 	
 		hP.checkArrivalsCount(Constants.arrivalsCount);
@@ -121,7 +121,7 @@ public class homePageTests {
 		Assert.assertTrue(hP.afterRemoveMessage.isDisplayed());
 	}
 	
-	@Test (enabled = false)
+	@Test (priority = 12)
 	public void HomeArrivalsAddToBasketItemsAddbook()throws InterruptedException{
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 		hP.verifyImagesInArrivalsShouldNavigate();
@@ -129,7 +129,7 @@ public class homePageTests {
 		boolean update = hP.updateBasket.isEnabled();
 		Assert.assertTrue(update);	
 	}
-	@Test (enabled = false)
+	@Test (priority = 13)
 	public void HomeArrivalsAddToBasketItemsCheckoutBookFinalPrice()throws InterruptedException{
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 		hP.verifyImagesInArrivalsShouldNavigate();
@@ -146,7 +146,7 @@ public class homePageTests {
 	
 //	 14. Home-Arrivals-Add to Basket-Items-Check-out-Update Basket (same as test case 12)
 	
-	@Test (enabled = false)
+	@Test (priority = 14)
 	public void HomeArrivalsAddToBasketItemsCheckoutTotalSubtotalcondition() throws InterruptedException {
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 		hP.verifyImagesInArrivalsShouldNavigate();
@@ -162,7 +162,7 @@ public class homePageTests {
 		}
 	}
 	
-	@Test (enabled = false)
+	@Test (priority = 15)
 	public void HomeArrivalsAddToBasketItemsCheckoutFunctionality()  throws InterruptedException{
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 		hP.verifyImagesInArrivalsShouldNavigate();
@@ -182,7 +182,7 @@ public class homePageTests {
 		
 	}
 	
-	@Test (enabled = false)
+	@Test (priority = 16)
 	public void HomeArrivalsAddToBasketItemsCheckoutPaymentGateway() throws InterruptedException {
 		hP.checkArrivalsCount(Constants.arrivalsCount);
 		hP.verifyImagesInArrivalsShouldNavigate();
@@ -202,7 +202,7 @@ public class homePageTests {
 		Assert.assertTrue(testResult.equalsIgnoreCase("Thank you. Your order has been received."));
 	}
 
-@Test (enabled = true)
+@Test (priority = 17)
 		public void HomeArrivalsAddToBasketItemsCheckoutPaymentGatewayPlaceOrder() throws InterruptedException {
 			hP.checkArrivalsCount(Constants.arrivalsCount);
 			hP.verifyImagesInArrivalsShouldNavigate();
