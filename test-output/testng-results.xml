@@ -1,81 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-05T15:48:01 EDT" name="Default suite" finished-at="2022-06-05T15:48:45 EDT" duration-ms="44620">
+  <suite started-at="2022-06-06T20:55:36 EDT" name="Default suite" finished-at="2022-06-06T20:55:36 EDT" duration-ms="189">
     <groups>
     </groups>
-    <test started-at="2022-06-05T15:48:01 EDT" name="Default test" finished-at="2022-06-05T15:48:45 EDT" duration-ms="44620">
-      <class name="testingClass_51Cases.myAccountLoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:01 EDT" name="setUp" finished-at="2022-06-05T15:48:05 EDT" duration-ms="3637" status="PASS">
+    <test started-at="2022-06-06T20:55:36 EDT" name="Default test" finished-at="2022-06-06T20:55:36 EDT" duration-ms="189">
+      <class name="testingClass_51Cases.shopTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.shopTests@640dc4c6]" started-at="2022-06-06T20:55:36 EDT" name="setUp" finished-at="2022-06-06T20:55:36 EDT" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithUserNameAndPassword()[pri:1, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:05 EDT" name="loginWithUserNameAndPassword" finished-at="2022-06-05T15:48:08 EDT" duration-ms="3688" status="PASS">
+        <test-method signature="ShopFilterByPriceFunctionality()[pri:0, instance:testingClass_51Cases.shopTests@640dc4c6]" started-at="2022-06-06T20:55:36 EDT" name="ShopFilterByPriceFunctionality" finished-at="2022-06-06T20:55:36 EDT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithUserNameAndPassword -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:08 EDT" name="setUp" finished-at="2022-06-05T15:48:11 EDT" duration-ms="2596" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LoginWithIncorrectUsernameAndIncorrectPassword()[pri:2, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:11 EDT" name="LoginWithIncorrectUsernameAndIncorrectPassword" finished-at="2022-06-05T15:48:12 EDT" duration-ms="1623" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithIncorrectUsernameAndIncorrectPassword -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:12 EDT" name="setUp" finished-at="2022-06-05T15:48:16 EDT" duration-ms="3354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LoginWithCorrectUsernameAndEmptyPassword()[pri:3, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:16 EDT" name="LoginWithCorrectUsernameAndEmptyPassword" finished-at="2022-06-05T15:48:17 EDT" duration-ms="1473" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithCorrectUsernameAndEmptyPassword -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:17 EDT" name="setUp" finished-at="2022-06-05T15:48:21 EDT" duration-ms="3486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LoginWithEmptyUsernameAndCorrectPassword()[pri:4, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:21 EDT" name="LoginWithEmptyUsernameAndCorrectPassword" finished-at="2022-06-05T15:48:22 EDT" duration-ms="1462" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithEmptyUsernameAndCorrectPassword -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:22 EDT" name="setUp" finished-at="2022-06-05T15:48:25 EDT" duration-ms="3028" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LoginWithEmptyUsernameAndEmptyPassword()[pri:5, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:25 EDT" name="LoginWithEmptyUsernameAndEmptyPassword" finished-at="2022-06-05T15:48:26 EDT" duration-ms="1256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithEmptyUsernameAndEmptyPassword -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:26 EDT" name="setUp" finished-at="2022-06-05T15:48:32 EDT" duration-ms="5900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LoginPasswordshouldBeMasked()[pri:6, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:32 EDT" name="LoginPasswordshouldBeMasked" finished-at="2022-06-05T15:48:33 EDT" duration-ms="248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginPasswordshouldBeMasked -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:33 EDT" name="setUp" finished-at="2022-06-05T15:48:35 EDT" duration-ms="2336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LoginHandlesCaseSensitive()[pri:7, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:35 EDT" name="LoginHandlesCaseSensitive" finished-at="2022-06-05T15:48:36 EDT" duration-ms="1369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginHandlesCaseSensitive -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:36 EDT" name="setUp" finished-at="2022-06-05T15:48:39 EDT" duration-ms="3102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LoginAuthentication()[pri:8, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:39 EDT" name="LoginAuthentication" finished-at="2022-06-05T15:48:45 EDT" duration-ms="5845" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginAuthentication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testingClass_51Cases.myAccountLoginTests@349d0836]" started-at="2022-06-05T15:48:45 EDT" name="tearDown" finished-at="2022-06-05T15:48:45 EDT" duration-ms="159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testingClass_51Cases.myAccountLoginTests -->
+        </test-method> <!-- ShopFilterByPriceFunctionality -->
+      </class> <!-- testingClass_51Cases.shopTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
